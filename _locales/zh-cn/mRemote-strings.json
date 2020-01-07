@@ -13,9 +13,9 @@
  "mRemote.mRocker.Down|block":"下",
  "mRemote.mRocker.Left|block":"左",
  "mRemote.mRocker.Right|block":"右",
- "mRemote.GetButton|block":"按钮%num|%value",
- "mRemote.onButtonPressed|block":"按钮%btn按下",
- "mRemote.Rocker|block":"摇杆%value",
- "mRemote.Remote_Shake|block":"手柄震动%value",
- "mRemote.PlayMusic|block":"播放音乐%index"
+ "mRemote.GetButton|block":"按钮|%num|%value",
+ "mRemote.onButtonPressed|block":"按钮|%btn|按下",
+ "mRemote.Rocker|block":"摇杆|%value",
+ "mRemote.Remote_Shake|block":"手柄震动|%value",
+ "mRemote.PlayMusic|block":"播放音乐|%index"
 }
