@@ -1,0 +1,17 @@
+{
+    "name": "pxt-mremote",
+    "githubId": "stem-hanshin/pxt-mremote#master",
+    "pubId": "",
+    "pubCurrent": false,
+    "meta": {},
+    "editor": "tsprj",
+    "target": "microbit",
+    "targetVersion": "2.1.38",
+    "id": "d9dd20e5-e10d-44d1-c0dc-ab8efd9a7809",
+    "recentUse": 1578374962,
+    "modificationTime": 1578374962,
+    "path": "pxt-mremote",
+    "blobCurrent": false,
+    "saveId": null,
+    "githubCurrent": false
+}

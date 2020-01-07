@@ -1,0 +1,21 @@
+{
+ "mRemote.Shake.OFF|block":"关闭",
+ "mRemote.Shake.ON|block":"打开",
+ "mRemote.ButtonState.Press|block":"按下",
+ "mRemote.ButtonState.Release|block":"释放",
+ "mRemote.Button.K1|block": "K1",
+ "mRemote.Button.K2|block": "K2",
+ "mRemote.Button.K3|block": "K3",
+ "mRemote.Button.K4|block": "K4", 
+ "mRemote.mRocker.NoState|block":"无",
+ "mRemote.mRocker.Pressed|block":"按下",
+ "mRemote.mRocker.Up|block":"上",
+ "mRemote.mRocker.Down|block":"下",
+ "mRemote.mRocker.Left|block":"左",
+ "mRemote.mRocker.Right|block":"右",
+ "mRemote.GetButton|block":"按钮%num|%value",
+ "mRemote.onButtonPressed|block":"按钮%btn按下",
+ "mRemote.Rocker|block":"摇杆%value",
+ "mRemote.Remote_Shake|block":"手柄震动%value",
+ "mRemote.PlayMusic|block":"播放音乐%index"
+}

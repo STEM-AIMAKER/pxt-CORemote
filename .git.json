@@ -1,0 +1,155 @@
+{
+    "repo": "stem-hanshin/pxt-mremote#master",
+    "commit": {
+        "sha": "076517d7a57e17a468fe815ebb71dba0b0c1afd2",
+        "node_id": "MDY6Q29tbWl0MjMyMjE5OTYyOjA3NjUxN2Q3YTU3ZTE3YTQ2OGZlODE1ZWJiNzFkYmEwYjBjMWFmZDI=",
+        "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/commits/076517d7a57e17a468fe815ebb71dba0b0c1afd2",
+        "html_url": "https://github.com/stem-hanshin/pxt-mRemote/commit/076517d7a57e17a468fe815ebb71dba0b0c1afd2",
+        "author": {
+            "name": "stem-hanshin",
+            "email": "59435476+stem-hanshin@users.noreply.github.com",
+            "date": "2020-01-07T01:47:51Z"
+        },
+        "committer": {
+            "name": "stem-hanshin",
+            "email": "59435476+stem-hanshin@users.noreply.github.com",
+            "date": "2020-01-07T01:47:51Z"
+        },
+        "tree": {
+            "sha": "6b6f6dbcdce6462a8729213a4028d9ea6c30ac85",
+            "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/trees/6b6f6dbcdce6462a8729213a4028d9ea6c30ac85",
+            "tree": [
+                {
+                    "path": ".github",
+                    "mode": "040000",
+                    "type": "tree",
+                    "sha": "1ac685ee5313ebfeaed12a57393fbe062d044c6e",
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/trees/1ac685ee5313ebfeaed12a57393fbe062d044c6e"
+                },
+                {
+                    "path": ".github/workflows",
+                    "mode": "040000",
+                    "type": "tree",
+                    "sha": "ee9506fcea5d19cbc1b1f6ac7c64e36e47ce5f29",
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/trees/ee9506fcea5d19cbc1b1f6ac7c64e36e47ce5f29"
+                },
+                {
+                    "path": ".github/workflows/makecode.yml",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "1aa354c3900c2c04ae183259ebe7adc1f30862a5",
+                    "size": 545,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/1aa354c3900c2c04ae183259ebe7adc1f30862a5"
+                },
+                {
+                    "path": ".gitignore",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "8147cdc4abfa0b7966da9caf84f3ddb650973349",
+                    "size": 83,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/8147cdc4abfa0b7966da9caf84f3ddb650973349"
+                },
+                {
+                    "path": ".vscode",
+                    "mode": "040000",
+                    "type": "tree",
+                    "sha": "3d5824b575208ab19c9f5257274c567690b36b71",
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/trees/3d5824b575208ab19c9f5257274c567690b36b71"
+                },
+                {
+                    "path": ".vscode/settings.json",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "f8106d4f0dc1b4e875476ab0b884f30a7ca10a4e",
+                    "size": 591,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/f8106d4f0dc1b4e875476ab0b884f30a7ca10a4e"
+                },
+                {
+                    "path": ".vscode/tasks.json",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "39ccded0ae50883b5b2b695829f9470eac2dbb34",
+                    "size": 916,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/39ccded0ae50883b5b2b695829f9470eac2dbb34"
+                },
+                {
+                    "path": "Makefile",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "9068464a3708777b2974226687914f552e9a2dbc",
+                    "size": 69,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/9068464a3708777b2974226687914f552e9a2dbc"
+                },
+                {
+                    "path": "README.md",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "eb920e247eb13d7a3afd3688da275378b834d162",
+                    "size": 867,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/eb920e247eb13d7a3afd3688da275378b834d162",
+                    "blobContent": "# pxt-mremote ![Build status badge](https://github.com/stem-hanshin/pxt-mremote/workflows/MakeCode/badge.svg)\n\n\n\n## 使用此插件\n\n此仓库可以作为 **插件** 添加到 MakeCode 中。\n\n* 打开 https://makecode.microbit.org/\n* 点击 **新项目**\n* 点击齿轮图标菜单下的 **扩展**\n* 搜索此仓库的 URL 并导入\n\n## 编辑此插件\n\n在 MakeCode 中编辑此仓库。\n\n* 打开 https://makecode.microbit.org/\n* 点击 **导入**，然后点击 **导入 URL**\n* 粘贴仓库 URL 地址并单击\"导入\"\n\n## Blocks preview\n\nThis image shows the blocks code from the last commit in master.\nThis image may take a few minutes to refresh.\n\n![A rendered view of the blocks](https://github.com/stem-hanshin/pxt-mremote/raw/master/.makecode/blocks.png)\n\n## 支持的目标\n\n* for PXT/microbit\n* for PXT/microbit\n（包搜索需要上述元数据。）\n\n"
+                },
+                {
+                    "path": "main.blocks",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "9720ca4d0e673bbca3c55a49555382c5948a1cdd",
+                    "size": 127,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/9720ca4d0e673bbca3c55a49555382c5948a1cdd",
+                    "blobContent": "<xml xmlns=\"http://www.w3.org/1999/xhtml\">\n  <block type=\"pxt-on-start\"></block>\n  <block type=\"device_forever\"></block>\n</xml>"
+                },
+                {
+                    "path": "main.ts",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+                    "size": 1,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc",
+                    "blobContent": "\n"
+                },
+                {
+                    "path": "pxt.json",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "d310486a5bc30ae88e400113ddd6daf01c467f24",
+                    "size": 332,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/d310486a5bc30ae88e400113ddd6daf01c467f24",
+                    "blobContent": "{\n    \"name\": \"pxt-mremote\",\n    \"version\": \"0.0.0\",\n    \"description\": \"\",\n    \"dependencies\": {\n        \"core\": \"*\",\n        \"radio\": \"*\"\n    },\n    \"files\": [\n        \"README.md\",\n        \"main.blocks\",\n        \"main.ts\"\n    ],\n    \"testFiles\": [\n        \"test.ts\"\n    ],\n    \"public\": true,\n    \"preferredEditor\": \"blocksprj\"\n}\n"
+                },
+                {
+                    "path": "test.ts",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "a8ce83a39a162aa750a43e5ce9f5fa06369ff5fe",
+                    "size": 91,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/a8ce83a39a162aa750a43e5ce9f5fa06369ff5fe",
+                    "blobContent": "// 在此处测试；当此软件包作为插件使用时，将不会编译此软件包。\n"
+                },
+                {
+                    "path": "tsconfig.json",
+                    "mode": "100644",
+                    "type": "blob",
+                    "sha": "a2079ff63abbe4ada5111fdd6b4918aa4514a7eb",
+                    "size": 185,
+                    "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/blobs/a2079ff63abbe4ada5111fdd6b4918aa4514a7eb"
+                }
+            ],
+            "truncated": false
+        },
+        "message": "Initial files for MakeCode project",
+        "parents": [
+            {
+                "sha": "09dcc89bbdf54495bf055b579992d4597425d012",
+                "url": "https://api.github.com/repos/stem-hanshin/pxt-mRemote/git/commits/09dcc89bbdf54495bf055b579992d4597425d012",
+                "html_url": "https://github.com/stem-hanshin/pxt-mRemote/commit/09dcc89bbdf54495bf055b579992d4597425d012"
+            }
+        ],
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "isFork": false
+}
