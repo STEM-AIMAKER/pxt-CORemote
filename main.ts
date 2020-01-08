@@ -1,6 +1,6 @@
 // % weight=10 color=#1E90FF icon="\uf238"
-// block="HANSHIN STEM mRemote"
-namespace mRemote {
+// block="HANSHIN STEM CORemote"
+namespace CORemote {
     let serialInited = 0
 
     export enum Shake{
