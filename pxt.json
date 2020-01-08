@@ -1,7 +1,7 @@
 {
-    "name": "mRemote",
+    "name": "CORemote",
     "version": "1.0.1",
-    "description": "Hanshin STEM mRemote",
+    "description": "Hanshin STEM CORemote",
     "license": "MIT",
     "dependencies": {
         "core": "*",
@@ -10,8 +10,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh-cn/mRemote-strings.json",
-        "_locales/zh-tw/mRemote-strings.json"
+        "_locales/zh-cn/CORemote-strings.json",
+        "_locales/zh-tw/CORemote-strings.json"
     ],
     "testFiles": [
         "test.ts"
