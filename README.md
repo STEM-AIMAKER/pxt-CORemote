@@ -9,7 +9,7 @@
 enum Shake{OFF,ON}
 ```
 
-``mMusic``, we provide some music options in advance, and use the function ``PlayMusic`` to play these musics.
+``mMusic``, we provide some music options in advance, and use the function ``PlayMusic()`` to play these musics.
 ```
 enum mMusic{some musics...}
 ```
@@ -25,25 +25,25 @@ enum Button{k1,k2,k3 and k4}
 ```
 
 ### Get button state
-Use the getbutton() function to get the status of the specified button with argument num of type Button and value of type ButtonState and return a boolean value.
+Use the ``GetButton()`` function to get the status of the specified button with argument ``num`` of type ``Button`` and ``value`` of type ``ButtonState`` and return a boolean value.
 ```
 CORemote.GetButton(num,value)
 ```
 
 ### Rocker's Operation
-Use the function Rocker() with argument value of type mRocker to operate the rocker
+Use the function ``Rocker()`` with argument ``value`` of type ``mRocke``r to operate the rocker
 ```
 CORemote.Rocker(value)
 ```
 
 ### Remote control of shake
-Use the function Remote_Shake() with argument value of type Shake to control shake remotely.
+Use the function ``Remote_Shake()`` with argument ``value`` of type ``Shake`` to control shake remotely.
 ```
 CORemote.Remote_Shake(value)
 ```
 
 ### Play music
-Use the function PlayMusic() with argument index of type mMusic to play music.
+Use the function ``PlayMusic()`` with argument ``index`` of type ``mMusic`` to play music.
 ```
 CORemote.PlayMusic(index)
 ```
