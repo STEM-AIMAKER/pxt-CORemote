@@ -36,7 +36,7 @@ namespace CORemote {
         //% blockId="Press" block="Press"
         Press = 0,
         //% blockId="Release" block="Release"
-        Realse = 1
+        Release = 1
     }
     export enum Button {
         //% blockId="K1" block="K1"
