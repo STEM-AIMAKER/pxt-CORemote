@@ -18,6 +18,6 @@
     "CORemote.Rocker|block":"搖桿%value",
     "CORemote.Remote_Shake|block":"手柄震動%value",
     "CORemote.PlayMusic|block":"播放音樂%index",
-    "{id:category}CORemote": "HANSHIN STEM手柄"
-   }
+    "{id:category}CORemote": "HANSHIN STEM手柄"
+}
    
