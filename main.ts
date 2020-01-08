@@ -1,4 +1,4 @@
-// % weight=10 color=#1E90FF icon="\uf238"
+// % weight=10 color=#1E90FF icon="\uf136"
 // block="HANSHIN STEM CORemote"
 namespace CORemote {
     let serialInited = 0
