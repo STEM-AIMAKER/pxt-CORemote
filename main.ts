@@ -1,4 +1,4 @@
-//% weight=10 color=#000000 icon="\uf136"
+//% weight=10 color=#1E90FF icon="\uf136"
 namespace CORemote {
     let serialInited = 0
 
