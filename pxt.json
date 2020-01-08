@@ -1,11 +1,10 @@
 {
-    "name": "CORemote",
+    "name": "coremote",
     "version": "1.0.1",
     "description": "Hanshin STEM CORemote",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
