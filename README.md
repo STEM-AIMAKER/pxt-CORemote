@@ -1,33 +1,62 @@
 # pxt-mremote ![Build status badge](https://github.com/stem-hanshin/pxt-mremote/workflows/MakeCode/badge.svg)
 
+## Usage
 
+### Basic data type
 
-## 使用此插件
+``Shake``,shake or not.
+```
+enum Shake{OFF,ON}
+```
 
-此仓库可以作为 **插件** 添加到 MakeCode 中。
+``mMusic``, we provide some music options in advance, and use the function ``PlayMusic`` to play these musics.
+```
+enum mMusic{some musics...}
+```
 
-* 打开 https://makecode.microbit.org/
-* 点击 **新项目**
-* 点击齿轮图标菜单下的 **扩展**
-* 搜索此仓库的 URL 并导入
+``Buttonstate``, indicating the button status.
+```
+enum Buttonstate{Press,Release}
+```
 
-## 编辑此插件
+``Button``, some known buttons.
+```
+enum Button{k1,k2,k3 and k4}
+```
 
-在 MakeCode 中编辑此仓库。
+### Get button state
+Use the getbutton() function to get the status of the specified button with argument num of type Button and value of type ButtonState and return a boolean value.
+```
+CORemote.GetButton(num,value)
+```
 
-* 打开 https://makecode.microbit.org/
-* 点击 **导入**，然后点击 **导入 URL**
-* 粘贴仓库 URL 地址并单击"导入"
+### Rocker's Operation
+Use the function Rocker() with argument value of type mRocker to operate the rocker
+```
+CORemote.Rocker(value)
+```
 
-## Blocks preview
+### Remote control of shake
+Use the function Remote_Shake() with argument value of type Shake to control shake remotely.
+```
+CORemote.Remote_Shake(value)
+```
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+### Play music
+Use the function PlayMusic() with argument index of type mMusic to play music.
+```
+CORemote.PlayMusic(index)
+```
 
-![A rendered view of the blocks](https://github.com/stem-hanshin/pxt-mremote/raw/master/.makecode/blocks.png)
+## Link
+If some errors occurred, you will need to search for it using the full Github repo URL. eg: https://github.com/stem-hanshin/pxt-CORemote
 
-## 支持的目标
+## License
+MIT
+
+## Supported targets
 
 * for PXT/microbit
-（包搜索需要上述元数据。）
+(The metadata above is needed for package search.)
+
 
