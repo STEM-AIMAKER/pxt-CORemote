@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh-cn/CORemote-strings.json",
-        "_locales/zh-tw/CORemote-strings.json"
+        "_locales/zh-cn/coremote-strings.json",
+        "_locales/zh-tw/coremote-strings.json"
     ],
     "testFiles": [
         "test.ts"
