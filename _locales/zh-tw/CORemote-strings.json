@@ -1,0 +1,23 @@
+{
+    "CORemote.Shake.OFF|block":"關閉",
+    "CORemote.Shake.ON|block":"打開",
+    "CORemote.ButtonState.Press|block":"按下",
+    "CORemote.ButtonState.Release|block":"釋放",
+    "CORemote.Button.K1|block": "K1",
+    "CORemote.Button.K2|block": "K2",
+    "CORemote.Button.K3|block": "K3",
+    "CORemote.Button.K4|block": "K4", 
+    "CORemote.mRocker.NoState|block":"無",
+    "CORemote.mRocker.Pressed|block":"按下",
+    "CORemote.mRocker.Up|block":"上",
+    "CORemote.mRocker.Down|block":"下",
+    "CORemote.mRocker.Left|block":"左",
+    "CORemote.mRocker.Right|block":"右",
+    "CORemote.GetButton|block":"按鈕%num|%value",
+    "CORemote.onButtonPressed|block":"按鈕%btn按下",
+    "CORemote.Rocker|block":"搖桿%value",
+    "CORemote.Remote_Shake|block":"手柄震動%value",
+    "CORemote.PlayMusic|block":"播放音樂%index",
+    "{id:category}CORemote": "HANSHIN STEM手柄"
+   }
+   
