@@ -29,6 +29,5 @@ This image may take a few minutes to refresh.
 ## 支持的目标
 
 * for PXT/microbit
-* for PXT/microbit
 （包搜索需要上述元数据。）
 
