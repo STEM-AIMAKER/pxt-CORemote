@@ -1,19 +1,20 @@
 {
-    "name": "pxt-mremote",
-    "version": "0.0.0",
-    "description": "",
+    "name": "coremote",
+    "version": "1.0.1",
+    "description": "Hanshin STEM CORemote",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts"
+        "main.ts",
+        "_locales/zh-cn/coremote-strings.json",
+        "_locales/zh-tw/coremote-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj",
+    "license": "MIT"
 }
