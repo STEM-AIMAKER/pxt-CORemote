@@ -221,12 +221,11 @@ export function onButtonPressed(btn: Button, body: Action) {
 
         if (x < 200) // 上
         {
-            now_state = mRocker.Up;
+            now_state = mRocker.Down;
         }
         else if (x > 900) // 下
         {
-
-            now_state = mRocker.Down;
+            now_state = mRocker.Up;
         }
         else  // 左右
         {
