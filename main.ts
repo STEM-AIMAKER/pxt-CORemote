@@ -257,11 +257,11 @@ export function onButtonPressed(btn: Button, body: Action) {
     export function Remote_Shake(value: Shake): void {
         switch (value) {
             case Shake.ON: {
-                //setPwm(0, 0, 4095);
+                setPwm(0, 0, 4095);
                 break;
             }
             case Shake.OFF: {
-                //setPwm(0, 0, 0);
+                setPwm(0, 0, 0);
                 break;
             }
         }
