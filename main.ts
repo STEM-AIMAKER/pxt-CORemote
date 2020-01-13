@@ -219,14 +219,14 @@ export function onButtonPressed(btn: Button, body: Action) {
         let z = pins.digitalReadPin(DigitalPin.P8);
         let now_state = mRocker.NoState;
 
-        if (x < 200) // 下
+        if (x < 200) // 上
         {
-            now_state = mRocker.Down;
+            now_state = mRocker.Up;
         }
-        else if (x > 900) //上
+        else if (x > 900) // 下
         {
 
-            now_state = mRocker.Up;
+            now_state = mRocker.Down;
         }
         else  // 左右
         {
