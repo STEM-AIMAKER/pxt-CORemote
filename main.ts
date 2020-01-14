@@ -246,11 +246,11 @@ export function onButtonPressed(btn: Button, body: Action) {
         let now_state = mRocker.NoState;
         if (y <= 300) // 下
         {
-            now_state = mRocker.Right;
+            now_state = mRocker.Down;
         }
         else if (y > 700) //上
         {
-            now_state = mRocker.Left;
+            now_state = mRocker.Up;
         }
 
         if (now_state == value)
@@ -281,11 +281,11 @@ export function onButtonPressed(btn: Button, body: Action) {
 
         if (y < 300) //右
         {
-            now_state = mRocker.Right;
+            now_state = mRocker.Down;
         }
         else if (y > 700) //左
         {
-            now_state = mRocker.Left;
+            now_state = mRocker.Up;
         }
         
         if (z == 0)
