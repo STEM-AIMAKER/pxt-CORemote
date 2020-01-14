@@ -65,7 +65,15 @@ namespace Joystick {
         //% blockId="Left" block="Left"
         Left = 4,
         //% blockId="Right" block="Right"
-        Right = 5        
+        Right = 5,
+        //% blockId="LeftUp" block="Left Up"
+        LeftUp=6,
+        //% blockId="LeftDown" block="LeftDown"
+        LeftDown=7,
+        //% blockId="RightUp" block="Right Up"
+        RightUp=8,
+        //% blockId="RightDown" block="Right Down"
+        RightDown=9        
     }
 
 function initSerial(): void {
@@ -214,49 +222,64 @@ export function onButtonPressed(btn: Button, body: Action) {
         let x = pins.analogReadPin(AnalogPin.P2);
         return x;
     }
-
-    //% blockId=RockerX block="Rocker x |value %value"
-    export function RockerX(value: mRocker): boolean {
-        let x = pins.analogReadPin(AnalogPin.P2);
-        let now_state = mRocker.NoState;
-        if (x <= 300) // 下
-        {
-            now_state = mRocker.Right;
-        }
-        else if (x > 700) //上
-        {
-            now_state = mRocker.Left;
-        }
-
-        if (now_state == value)
-            return true;
-        else
-            return false;
-    }
-
+    
     //% blockId=AnalogRockerY block="Analog Rocker Y |value %value"
     export function AnalogRockerY(): number {
         let y = pins.analogReadPin(AnalogPin.P1);
         return y;
     }
 
-    //% blockId=RockerY block="Rocker y |value %value"
-    export function RockerY(value: mRocker): boolean {
-        let y = pins.analogReadPin(AnalogPin.P1);
-        let now_state = mRocker.NoState;
-        if (y <= 300) // 下
-        {
-            now_state = mRocker.Down;
-        }
-        else if (y > 700) //上
-        {
-            now_state = mRocker.Up;
+    //% blockId=GetRocker block="Get Rocker value"
+    export function GetRocker():number {
+        let ret = mRocker.NoState;
+        pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
+        
+        let z = pins.digitalReadPin(DigitalPin.P8);
+        if (z == 0){
+            ret = mRocker.Pressed;
+            return ret;
         }
 
-        if (now_state == value)
-            return true;
+        let y = pins.analogReadPin(AnalogPin.P1);
+        let x = pins.analogReadPin(AnalogPin.P2);
+
+        if (x <= 300) // 下
+        {
+            ret = mRocker.Right;
+            if( y < 300 )
+            {
+                ret = mRocker.RightDown;
+            }
+            else if(y>700)
+            {
+                ret = mRocker.RightUp;
+            }
+        }
+        else if (x > 700) //上
+        {
+            ret = mRocker.Left;
+            if( y < 300 )
+            {
+                ret = mRocker.LeftDown;
+            }
+            else if( y > 700 )
+            {
+                ret = mRocker.LeftUp;
+            }
+        }
         else
-            return false;
+        {
+            // only y
+            if (y < 300) //右
+            {
+                ret = mRocker.Down;
+            }
+            else if (y > 700) //左
+            {
+                ret = mRocker.Up;
+            }
+        }
+        return ret;
     }
 
     //% blockId=Rocker block="Rocker|value %value"
@@ -265,31 +288,49 @@ export function onButtonPressed(btn: Button, body: Action) {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function Rocker(value: mRocker): boolean {
         pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
-        let y = pins.analogReadPin(AnalogPin.P1);
-        let x = pins.analogReadPin(AnalogPin.P2);
         let z = pins.digitalReadPin(DigitalPin.P8);
-        let now_state = mRocker.NoState;
-
-        if (x <= 300) // 下
-        {
-            now_state = mRocker.Right;
-        }
-        else if (x > 700) //上
-        {
-            now_state = mRocker.Left;
-        }
-
-        if (y < 300) //右
-        {
-            now_state = mRocker.Down;
-        }
-        else if (y > 700) //左
-        {
-            now_state = mRocker.Up;
-        }
-        
+        let y = pins.analogReadPin(AnalogPin.P1);
+        let x = pins.analogReadPin(AnalogPin.P2);        
+        let now_state = mRocker.NoState;               
         if (z == 0)
+        {
             now_state = mRocker.Pressed;
+        }
+        else
+        {
+            if (x <= 300) // 下
+            {
+                now_state = mRocker.Right;
+                if (y < 300) {
+                    now_state = mRocker.RightDown;
+                }
+                else if (y > 700) {
+                    now_state = mRocker.RightUp;
+                }
+            }
+            else if (x > 700) //上
+            {
+                now_state = mRocker.Left;
+                if (y < 300) {
+                    now_state = mRocker.LeftDown;
+                }
+                else if (y > 700) {
+                    now_state = mRocker.LeftUp;
+                }
+            }
+            else {
+                // only y
+                if (y < 300) //右
+                {
+                    now_state = mRocker.Down;
+                }
+                else if (y > 700) //左
+                {
+                    now_state = mRocker.Up;
+                }
+            }
+        }
+
         if (now_state == value)
             return true;
         else
