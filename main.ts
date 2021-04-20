@@ -1,5 +1,5 @@
 //% weight=10 color=#1E90FF icon="\uf136"
-namespace Joystick {
+namespace JoystickController {
     const PCA9685_ADD = 0x41;
     const MODE1 = 0x00;
     const PRESCALE = 0xFE;

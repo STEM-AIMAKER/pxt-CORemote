@@ -1,7 +1,7 @@
 {
-    "name": "joystick",
+    "name": "Joystick Controller",
     "version": "1.0.1",
-    "description": "Hanshin STEM Joystick",
+    "description": "Hanshin STEM Joystick Controller",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -16,5 +16,8 @@
         "test.ts"
     ],
     "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
     "preferredEditor": "tsprj"
 }
